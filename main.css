@@ -2,10 +2,12 @@
   --text-color: hsl(0, 0%, 20%);
   --text-size: 1rem;
 
+  /* Text Heading Variables */
   --text-heading-scale: 0.5;
   --text-heading-thickness: normal;
   --text-heading-small-thickness: inherit;
 
+  /* Text Heading Scale */
   --text-heading-1-scale-multiplier: 6;
   --text-heading-2-scale-multiplier: 5;
   --text-heading-3-scale-multiplier: 4;
@@ -13,6 +15,7 @@
   --text-heading-5-scale-multiplier: 2;
   --text-heading-6-scale-multiplier: 1;
 
+  /* Text Margin Multiplier */
   --text-heading-1-spacing-multiplier: 4;
   --text-heading-2-spacing-multiplier: 3.5;
   --text-heading-3-spacing-multiplier: 3;
