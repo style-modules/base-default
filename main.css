@@ -1,3 +1,30 @@
 :root {
-  --some-var: black;
+  --text-color: hsl(0, 0%, 20%);
+  --text-size: 1rem;
+
+  --text-heading-scale: 0.5;
+  --text-heading-thickness: normal;
+  --text-heading-small-thickness: inherit;
+
+  --text-heading-1-scale-multiplier: 6;
+  --text-heading-2-scale-multiplier: 5;
+  --text-heading-3-scale-multiplier: 4;
+  --text-heading-4-scale-multiplier: 3;
+  --text-heading-5-scale-multiplier: 2;
+  --text-heading-6-scale-multiplier: 1;
+
+  --text-heading-1-spacing-multiplier: 4;
+  --text-heading-2-spacing-multiplier: 3.5;
+  --text-heading-3-spacing-multiplier: 3;
+  --text-heading-4-spacing-multiplier: 2.5;
+  --text-heading-5-spacing-multiplier: 2;
+  --text-heading-6-spacing-multiplier: 1.5;
 }
+
+@custom-selector :--headings h1, .heading-1, h2, .heading-2, h3, .heading-3, h4, .heading-4, h5, .heading-5, h6, .heading-6;
+@custom-selector :--heading-1 h1, .heading-1;
+@custom-selector :--heading-2 h2, .heading-2;
+@custom-selector :--heading-3 h3, .heading-3;
+@custom-selector :--heading-4 h4, .heading-4;
+@custom-selector :--heading-5 h5, .heading-5;
+@custom-selector :--heading-6 h6, .heading-6;
