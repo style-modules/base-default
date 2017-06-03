@@ -6,22 +6,24 @@
   --text-heading-scale: 0.5;
   --text-heading-thickness: normal;
   --text-heading-small-thickness: inherit;
+  --text-heading-small-size: 60%;
+  --text-heading-small-color: color(var(--text-color) lightness(+ 20%));
 
-  /* Text Heading Scale */
-  --text-heading-1-scale-multiplier: 6;
-  --text-heading-2-scale-multiplier: 5;
-  --text-heading-3-scale-multiplier: 4;
-  --text-heading-4-scale-multiplier: 3;
-  --text-heading-5-scale-multiplier: 2;
-  --text-heading-6-scale-multiplier: 1;
+  /* Text Heading Font Sizes */
+  --text-heading-1: calc(var(--text-size) * var(--text-heading-scale) * 6 + var(--text-size));
+  --text-heading-2: calc(var(--text-size) * var(--text-heading-scale) * 5 + var(--text-size));
+  --text-heading-3: calc(var(--text-size) * var(--text-heading-scale) * 4 + var(--text-size));
+  --text-heading-4: calc(var(--text-size) * var(--text-heading-scale) * 3 + var(--text-size));
+  --text-heading-5: calc(var(--text-size) * var(--text-heading-scale) * 2 + var(--text-size));
+  --text-heading-6: calc(var(--text-size) * var(--text-heading-scale) * 1 + var(--text-size));
 
-  /* Text Margin Multiplier */
-  --text-heading-1-spacing-multiplier: 4;
-  --text-heading-2-spacing-multiplier: 3.5;
-  --text-heading-3-spacing-multiplier: 3;
-  --text-heading-4-spacing-multiplier: 2.5;
-  --text-heading-5-spacing-multiplier: 2;
-  --text-heading-6-spacing-multiplier: 1.5;
+  /* Text Heading Spacing (Margins) */
+  --text-heading-1-spacing: calc(var(--text-size) * var(--text-heading-scale) * 4 + var(--text-size) / 1.2) auto;
+  --text-heading-2-spacing: calc(var(--text-size) * var(--text-heading-scale) * 3.5 + var(--text-size) / 1.2) auto;
+  --text-heading-3-spacing: calc(var(--text-size) * var(--text-heading-scale) * 3 + var(--text-size) / 1.2) auto;
+  --text-heading-4-spacing: calc(var(--text-size) * var(--text-heading-scale) * 2.5 + var(--text-size) / 1.2) auto;
+  --text-heading-5-spacing: calc(var(--text-size) * var(--text-heading-scale) * 2 + var(--text-size) / 1.2) auto;
+  --text-heading-6-spacing: calc(var(--text-size) * var(--text-heading-scale) * 1.5 + var(--text-size) / 1.2) auto;
 }
 
 @custom-selector :--headings h1, .heading-1, h2, .heading-2, h3, .heading-3, h4, .heading-4, h5, .heading-5, h6, .heading-6;
