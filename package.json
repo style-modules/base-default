@@ -18,9 +18,9 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "stylelint": "*",
-    "stylelint-config-standard": "*",
-    "stylelint-order": "*",
-    "stylelint-rscss": "*"
+    "stylelint": "7.x",
+    "stylelint-config-standard": "16.x",
+    "stylelint-order": "0.4.x",
+    "stylelint-rscss": "0.4.x"
   }
 }
