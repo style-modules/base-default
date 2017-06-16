@@ -1,7 +1,14 @@
+/*!
+ * Base-Default (Style Modules Package)
+ * LICENSE: Creative Commons Zero 1.0 (aka CC0 1.0)
+ * https://github.com/style-modules/base-default
+ */
+
 :root {
   /* Global Text Variables */
   --text-color: hsl(0, 0%, 20%);
   --text-size: 1rem;
+  --text-font: system-ui, sans-serif;
 
   /* Text Heading Variables */
   --text-heading-scale: 0.5;
@@ -19,12 +26,13 @@
   --text-heading-6: calc(var(--text-size) * var(--text-heading-scale) * 1 + var(--text-size));
 
   /* Text Heading Spacing (Margins) */
-  --text-heading-1-spacing: calc(var(--text-size) * var(--text-heading-scale) * 4 + var(--text-size) / 1.2) auto;
-  --text-heading-2-spacing: calc(var(--text-size) * var(--text-heading-scale) * 3.5 + var(--text-size) / 1.2) auto;
-  --text-heading-3-spacing: calc(var(--text-size) * var(--text-heading-scale) * 3 + var(--text-size) / 1.2) auto;
-  --text-heading-4-spacing: calc(var(--text-size) * var(--text-heading-scale) * 2.5 + var(--text-size) / 1.2) auto;
-  --text-heading-5-spacing: calc(var(--text-size) * var(--text-heading-scale) * 2 + var(--text-size) / 1.2) auto;
-  --text-heading-6-spacing: calc(var(--text-size) * var(--text-heading-scale) * 1.5 + var(--text-size) / 1.2) auto;
+  --text-heading-spacing-sides: auto;
+  --text-heading-1-spacing: calc(var(--text-size) * var(--text-heading-scale) * 4 + var(--text-size) / 1.2);
+  --text-heading-2-spacing: calc(var(--text-size) * var(--text-heading-scale) * 3.5 + var(--text-size) / 1.2);
+  --text-heading-3-spacing: calc(var(--text-size) * var(--text-heading-scale) * 3 + var(--text-size) / 1.2);
+  --text-heading-4-spacing: calc(var(--text-size) * var(--text-heading-scale) * 2.5 + var(--text-size) / 1.2);
+  --text-heading-5-spacing: calc(var(--text-size) * var(--text-heading-scale) * 2 + var(--text-size) / 1.2);
+  --text-heading-6-spacing: calc(var(--text-size) * var(--text-heading-scale) * 1.5 + var(--text-size) / 1.2);
 }
 
 /* Heading Selectors */
