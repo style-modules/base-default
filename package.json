@@ -2,7 +2,7 @@
   "name": "style-modules-base-default",
   "version": "0.1.0",
   "description": "The Default Base for Style Modules",
-  "license": "CC0",
+  "license": "	CC0-1.0",
   "repository": "style-modules/base-default",
   "bugs": "https://github.com/style-modules/base-default/issues",
   "author": "Samuel Champagne <iron@firemail.cc> (http://SamuelChampagne.com)",
