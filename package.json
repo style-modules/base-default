@@ -18,9 +18,15 @@
   },
   "dependencies": {},
   "devDependencies": {
+    "cz-conventional-changelog": "^2.1.0",
     "stylelint": "7.x",
     "stylelint-config-standard": "16.x",
     "stylelint-order": "0.4.x",
     "stylelint-rscss": "0.4.x"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
