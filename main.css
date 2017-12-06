@@ -8,7 +8,11 @@
   /* Global Text Variables */
   --text-color: hsl(0, 0%, 20%);
   --text-size: 1rem;
+  --text-small-size: 80%;
   --text-font: system-ui, sans-serif;
+  --text-font-sans-serif: system-ui, sans-serif;
+  --text-font-serif: 'Georgia', 'Times New Roman', serif;
+  --text-font-mono: 'Consolas', 'monaco', monospace;
 
   /* Text Heading Variables */
   --text-heading-scale: 0.5;
@@ -18,28 +22,53 @@
   --text-heading-small-color: color(var(--text-color) lightness(+ 20%));
 
   /* Text Heading Font Sizes */
-  --text-heading-1: calc(var(--text-size) * var(--text-heading-scale) * 6 + var(--text-size));
-  --text-heading-2: calc(var(--text-size) * var(--text-heading-scale) * 5 + var(--text-size));
-  --text-heading-3: calc(var(--text-size) * var(--text-heading-scale) * 4 + var(--text-size));
-  --text-heading-4: calc(var(--text-size) * var(--text-heading-scale) * 3 + var(--text-size));
-  --text-heading-5: calc(var(--text-size) * var(--text-heading-scale) * 2 + var(--text-size));
-  --text-heading-6: calc(var(--text-size) * var(--text-heading-scale) * 1 + var(--text-size));
+  --text-heading-1: calc(var(--text-size) * var(--text-heading-scale) * 3 + var(--text-size));
+  --text-heading-2: calc(var(--text-size) * var(--text-heading-scale) * 2.6 + var(--text-size));
+  --text-heading-3: calc(var(--text-size) * var(--text-heading-scale) * 2.4 + var(--text-size));
+  --text-heading-4: calc(var(--text-size) * var(--text-heading-scale) * 2 + var(--text-size));
+  --text-heading-5: calc(var(--text-size) * var(--text-heading-scale) * 1.6 + var(--text-size));
+  --text-heading-6: calc(var(--text-size) * var(--text-heading-scale) * 1.2 + var(--text-size));
 
   /* Text Heading Spacing (Margins) */
-  --text-heading-spacing-sides: auto;
-  --text-heading-1-spacing: calc(var(--text-size) * var(--text-heading-scale) * 4 + var(--text-size) / 1.2);
-  --text-heading-2-spacing: calc(var(--text-size) * var(--text-heading-scale) * 3.5 + var(--text-size) / 1.2);
-  --text-heading-3-spacing: calc(var(--text-size) * var(--text-heading-scale) * 3 + var(--text-size) / 1.2);
-  --text-heading-4-spacing: calc(var(--text-size) * var(--text-heading-scale) * 2.5 + var(--text-size) / 1.2);
-  --text-heading-5-spacing: calc(var(--text-size) * var(--text-heading-scale) * 2 + var(--text-size) / 1.2);
-  --text-heading-6-spacing: calc(var(--text-size) * var(--text-heading-scale) * 1.5 + var(--text-size) / 1.2);
+  --text-heading-spacing: 2rem 0 0.5rem;
+  --text-heading-1-spacing: var(--text-heading-spacing);
+  --text-heading-2-spacing: var(--text-heading-spacing);
+  --text-heading-3-spacing: var(--text-heading-spacing);
+  --text-heading-4-spacing: var(--text-heading-spacing);
+  --text-heading-5-spacing: var(--text-heading-spacing);
+  --text-heading-6-spacing: var(--text-heading-spacing);
 }
 
 /* Heading Selectors */
-@custom-selector :--headings h1, .heading-1, h2, .heading-2, h3, .heading-3, h4, .heading-4, h5, .heading-5, h6, .heading-6;
-@custom-selector :--heading-1 h1, .heading-1;
-@custom-selector :--heading-2 h2, .heading-2;
-@custom-selector :--heading-3 h3, .heading-3;
-@custom-selector :--heading-4 h4, .heading-4;
-@custom-selector :--heading-5 h5, .heading-5;
-@custom-selector :--heading-6 h6, .heading-6;
+@custom-selector :--headings
+  h1, .heading-1,
+  h2, .heading-2,
+  h3, .heading-3,
+  h4, .heading-4,
+  h5, .heading-5,
+  h6, .heading-6 ;
+@custom-selector :--heading-1
+  h1, .heading-1 ;
+@custom-selector :--heading-2
+  h2, .heading-2 ;
+@custom-selector :--heading-3
+  h3, .heading-3 ;
+@custom-selector :--heading-4
+  h4, .heading-4 ;
+@custom-selector :--heading-5
+  h5, .heading-5 ;
+@custom-selector :--heading-6
+  h6, .heading-6 ;
+@custom-selector :--headings-display
+  .display-1
+  .display-2
+  .display-3
+  .display-4 ;
+@custom-selector :--heading-display-1
+  .display-1 ;
+@custom-selector :--heading-display-2
+  .display-2 ;
+@custom-selector :--heading-display-3
+  .display-3 ;
+@custom-selector :--heading-display-4
+  .display-4 ;
