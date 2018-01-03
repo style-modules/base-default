@@ -5,36 +5,62 @@
  */
 
 :root {
+  /* * * * * * * * * * * * * * * * * * * * * * * * * * * *
+   * >> Level 1 Variables                                *
+   * Only Used In This File, The Style Modules Base      *
+   * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+  /* Font Variables */
+  --font-system-ui: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  --font-system-emoji: "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+
   /* Global Text Variables */
   --text-color: hsl(0, 0%, 20%);
   --text-size: 1rem;
   --text-small-size: 80%;
-  --text-font: system-ui, sans-serif;
-  --text-font-sans-serif: system-ui, sans-serif;
-  --text-font-serif: 'Georgia', 'Times New Roman', serif;
-  --text-font-mono: 'Consolas', 'monaco', monospace;
 
   /* Text Heading Variables */
-  --text-heading-scale: 0.5;
-  --text-heading-thickness: normal;
-  --text-heading-small-thickness: inherit;
-  --text-heading-small-size: 60%;
-  --text-heading-small-color: color(var(--text-color) lightness(+ 20%));
-
-  /* Text Heading Font Sizes */
-  --text-heading-1: calc(var(--text-size) * var(--text-heading-scale) * 3 + var(--text-size));
-  --text-heading-2: calc(var(--text-size) * var(--text-heading-scale) * 2.6 + var(--text-size));
-  --text-heading-3: calc(var(--text-size) * var(--text-heading-scale) * 2.4 + var(--text-size));
-  --text-heading-4: calc(var(--text-size) * var(--text-heading-scale) * 2 + var(--text-size));
-  --text-heading-5: calc(var(--text-size) * var(--text-heading-scale) * 1.6 + var(--text-size));
-  --text-heading-6: calc(var(--text-size) * var(--text-heading-scale) * 1.2 + var(--text-size));
+  --heading-scale: 0.5;
 
   /* Text Heading Spacing (Margins) */
-  --text-heading-spacing: 2rem 0 0.5rem;
-  --text-heading-1-spacing: var(--text-heading-spacing);
-  --text-heading-2-spacing: var(--text-heading-spacing);
-  --text-heading-3-spacing: var(--text-heading-spacing);
-  --text-heading-4-spacing: var(--text-heading-spacing);
-  --text-heading-5-spacing: var(--text-heading-spacing);
-  --text-heading-6-spacing: var(--text-heading-spacing);
+  --heading-spacing: 2rem 0 0.5rem;
+
+  /* * * * * * * * * * * * * * * * * * * * * * * * * * * *
+   * >> Level 0 Variables                                *
+   * Directly Used By Modules                            *
+   * * * * * * * * * * * * * * * * * * * * * * * * * * * */
+
+  /* Font Variables */
+  --font: var(--font-system-ui), var(--font-system-emoji);
+  --font-sans-serif: var(--font-system-ui);
+  --font-serif: 'Georgia', 'Times New Roman', serif;
+  --font-mono: 'Consolas', 'monaco', monospace;
+
+  /* Global Text Variables */
+  --base-text-color: var(--text-color);
+  --base-text-size: var(--text-size);
+  --base-text-small-size: var(--text-small-size);
+
+  /* Text Heading Variables */
+  --heading-color: var(--text-color);
+  --heading-thickness: normal;
+  --heading-small-thickness: inherit;
+  --heading-small-size: 60%;
+  --heading-small-color: color(var(--text-color) lightness(+ 20%));
+
+  /* Text Heading Font Sizes */
+  --heading-1: calc(var(--text-size) * var(--heading-scale) * 3 + var(--text-size));
+  --heading-2: calc(var(--text-size) * var(--heading-scale) * 2.6 + var(--text-size));
+  --heading-3: calc(var(--text-size) * var(--heading-scale) * 2.4 + var(--text-size));
+  --heading-4: calc(var(--text-size) * var(--heading-scale) * 2 + var(--text-size));
+  --heading-5: calc(var(--text-size) * var(--heading-scale) * 1.6 + var(--text-size));
+  --heading-6: calc(var(--text-size) * var(--heading-scale) * 1.2 + var(--text-size));
+
+  /* Text Heading Spacing (Margins) */
+  --heading-1-spacing: var(--heading-spacing);
+  --heading-2-spacing: var(--heading-spacing);
+  --heading-3-spacing: var(--heading-spacing);
+  --heading-4-spacing: var(--heading-spacing);
+  --heading-5-spacing: var(--heading-spacing);
+  --heading-6-spacing: var(--heading-spacing);
 }
